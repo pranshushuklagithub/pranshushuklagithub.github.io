@@ -15,8 +15,8 @@ export default function About() {
         <Box w="60%" textAlign="left">
         <Box  w="50%"  id="user-detail-intro" m="auto">
         <Text fontSize={["xl","2xl","4xl"]}>I am  </Text>
-        <Heading id="user-detail-name" fontSize={["xl","2xl","4xl"]}> A Software Developer(Tech Enthusiastic)</Heading>
-         tech
+        <Heading id="user-detail-name" fontSize={["xl","2xl","4xl"]}> A Software Developer</Heading>
+        
         </Box>
         <Box  w = "50%" fontSize={["md","lg","xl"]} m="auto" mt="2%" id="user-detail-name">
         A passionate Software developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision. Looking forward to join a progressive organization with opportunities to work on significant projects.
