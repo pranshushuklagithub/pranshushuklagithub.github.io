@@ -4,7 +4,7 @@ import { downloadResume } from "./Functions/function";
 export default function Home() {
     return <Flex id="home" bg="green.200" p="3%" h="100%" flexWrap="wrap" alignItems="center">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
-            <Image className="home-img" src="https://pranshushuklagithub.github.io/src/Components/Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
+            <Image className="home-img" src="https://pranshushuklagithub.github.io/Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
         </Box>
         <Box  textAlign="left">
         <Box  w="80%"  id="user-detail-intro" m="auto">

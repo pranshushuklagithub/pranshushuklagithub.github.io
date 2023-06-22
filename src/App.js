@@ -19,7 +19,14 @@ function App() {
     <Box className="App" bg="green.200" id="nav-menu">
       <Navbar comp={comp} setComp={setComp}/>
       <Box h="640px" bg="green.200"> 
-        {comp==="home"?<Home/>:comp==="about"?<About/>:comp==="skills"?<Skills/>:comp==="projects"?<Projects/>:comp==="contact"?<Contact/>:false}
+        {/* {comp==="home"?<Home/>:comp==="about"?<About/>:comp==="skills"?<Skills/>:comp==="projects"?<Projects/>:comp==="contact"?<Contact/>:false} */}
+      
+        <Home/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+      
       </Box>
     </Box>
 

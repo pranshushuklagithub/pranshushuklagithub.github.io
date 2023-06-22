@@ -8,7 +8,7 @@ export default function Contact() {
             <Flex flexWrap="wrap" w="80%" m="auto" justify="space-between" alignItems="center">
 
             <Box w="40%" borderRadius="10%">
-            <Image src="https://pranshushuklagithub.github.io/src/Components/Images/socialmedia.jpg" w="100%" borderRadius="10%"></Image>
+            <Image src="http://pranshushuklagithub.github.io/Images/socialmedia.jpg" w="100%" borderRadius="10%"></Image>
             </Box>
         
         <Box w="60%"  p="3%" justifyContent="left" color={["teal","teal","black"]}> 

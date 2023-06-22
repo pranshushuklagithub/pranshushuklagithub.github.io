@@ -5,7 +5,7 @@ export default function Skills() {
     return <Box id="skills" p="2%" bg="green.200" textAlign="left">
         <Box>
         <Card direction={{ base: 'column', sm: 'row' }}overflow='hidden'  variant='outline' w="70%" m="auto" bg="green.100">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/src/Components/Images/softskillcover.jpg'alt='softskills'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/softskillcover.jpg'alt='softskills'/>
 
             <Stack>
                 <CardBody >
@@ -21,7 +21,7 @@ export default function Skills() {
 
         <Box mt="2%">
         <Card direction={{ base: 'column', sm: 'row' }}overflow='hidden'  variant='outline' w="70%" m="auto" bg="green.100">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/src/Components/Images/frontendcover.jpg'alt='frontend'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/frontendcover.jpg'alt='frontend'/>
 
             <Stack>
                 <CardBody>
@@ -42,7 +42,7 @@ export default function Skills() {
         </Box>
         <Box mt="2%" mb="2%">
         <Card direction={{ base: 'column', sm: 'row' }}overflow='hidden'  variant='outline' w="70%" m="auto" bg="green.100">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/src/Components/Images/backendcover.jpg'alt='backend'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/backendcover.jpg'alt='backend'/>
 
             <Stack>
                 <CardBody>
