@@ -8,7 +8,7 @@ export default function Projects(){
     const projects = [
         {
             name:"Razer.com-Clone",
-            image:"https://pranshushuklagithub.github.io/portfolio/src/Components/Images/razer.png",
+            image:"https://pranshushuklagithub.github.io/src/Components/Images/razer.png",
             description:"An e-commerce website(USA based), where people can explore and buy electronic products.",
             github:"https://github.com/hasbealam/razer.com-clone.git",
             live:"razer-clone-blush.vercel.app/",
@@ -16,7 +16,7 @@ export default function Projects(){
         },
         {
             name:"Tata1MG.com-Clone",
-            image:"https://pranshushuklagithub.github.io/portfolio/src/Components/Images/tata1mg.png",
+            image:"https://pranshushuklagithub.github.io/src/Components/Images/tata1mg.png",
             description:"Tata's leading ecommerce website, where people can explore and buy pharma products.",
             github:"https://github.com/pranshushuklagithub/tata1mg-clone.git",
             live:"https://648b7445ccba720a9e352702--deft-pika-7adc6a.netlify.app/",
@@ -24,7 +24,7 @@ export default function Projects(){
         },
         {
             name:"Bewakoof.com-Clone",
-            image:"https://pranshushuklagithub.github.io/portfolio/src/Components/Images/bewakoof.png",
+            image:"https://pranshushuklagithub.github.io/src/Components/Images/bewakoof.png",
             description:"A leading ecommerce in Fashion industry, where people can explore and buy fashion products.",
             github:"https://github.com/arsh459/Bewakoof-clone.git",
             live:"https://magical-creponne-d53ec4.netlify.app/",
@@ -32,7 +32,7 @@ export default function Projects(){
         },
         {
             name:"Travelious.com-Clone",
-            image:"https://pranshushuklagithub.github.io/portfolio/src/Components/Images/travalious.png",
+            image:"https://pranshushuklagithub.github.io/src/Components/Images/travalious.png",
             description:"Leading Ecommerce which offers various travel and tours services.",
             github:"https://github.com/arsh459/Bewakoof-clone.git",
             live:"https://travelious-clone-app.vercel.app/",
@@ -40,7 +40,7 @@ export default function Projects(){
         },
         {
             name:"Portfolio Website",
-            image:"https://pranshushuklagithub.github.io/portfolio/src/Components/Images/portfoliocover.png",
+            image:"https://pranshushuklagithub.github.io/src/Components/Images/portfoliocover.png",
             description:"Leading Ecommerce which offers various travel and tours services.",
             github:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
             live:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
