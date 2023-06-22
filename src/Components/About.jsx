@@ -15,11 +15,11 @@ export default function About() {
         <Box w="60%" textAlign="left">
         <Box  w="50%"  id="user-detail-intro" m="auto">
         <Text fontSize={["xl","2xl","4xl"]}>I am  </Text>
-        <Heading id="user-detail-name" fontSize={["xl","2xl","4xl"]}> A Software Developer</Heading>
-         
+        <Heading id="user-detail-name" fontSize={["xl","2xl","4xl"]}> A Software Developer(Tech Enthusiastic)</Heading>
+         tech
         </Box>
         <Box  w = "50%" fontSize={["md","lg","xl"]} m="auto" mt="2%" id="user-detail-name">
-        A passionate Software developer with considerable tech skills who possess self-discipline and the ability to work with minimum supervision. Looking forward to join a progressive organization with opportunities to work on significant projects.
+        A passionate Software developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision. Looking forward to join a progressive organization with opportunities to work on significant projects.
         </Box>
         <Button onClick={onOpen} ml="25%" mt="5%" w ={["85px","105px","125px"]} h={["20px","30px","40px"]} fontSize={["5px","7px","12px"]}  _hover={{bg:"green.300",color:"black"}} colorScheme="teal">See My Qualifications</Button>
         {isOpen?<Qualifications onOpen={onOpen} onClose={onClose} isOpen={isOpen}/>:false}
