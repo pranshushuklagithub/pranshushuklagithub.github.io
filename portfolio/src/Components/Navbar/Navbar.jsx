@@ -6,7 +6,7 @@ import { downloadResume } from "../Functions/function";
 export default function Navbar({comp,setComp}){
     console.log(comp)
     
-    return <Box id="nav-menu" bg="MenuText" p="1%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"  >
+    return <Box id="nav-menu" bg="MenuText" p="1%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" >
         <Flex w="100%" justify="space-evenly" flexWrap={["wrap"]}>
         <Link to = "/" onClick={()=>{
             setComp("home")
