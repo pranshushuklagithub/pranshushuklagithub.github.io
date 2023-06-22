@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar"
 export default function Skills() {
     return <Box id="skills" p="2%" bg="green.200" textAlign="left">
         <Box>
-        <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%">
+        <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/softskillcover.jpg'alt='softskills'/>
 
             <Stack>
@@ -20,7 +20,7 @@ export default function Skills() {
         </Box>
 
         <Box mt="2%">
-        <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%">
+        <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/frontendcover.jpg'alt='frontend'/>
 
             <Stack>
@@ -41,7 +41,7 @@ export default function Skills() {
         </Box>
         </Box>
         <Box mt="2%" mb="2%">
-        <Box direction={{ base: 'column', sm: 'row' }} w="70%" m="auto" bg="green.100" p="2%">
+        <Box direction={{ base: 'column', sm: 'row' }} w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/backendcover.jpg'alt='backend'/>
 
             <Stack>
@@ -62,7 +62,7 @@ export default function Skills() {
         <Text fontSize={["xl","2xl","4xl"]} mb="3%" color="teal">My GitHub Statistics</Text>
         <GitHubCalendar className="react-activity-calendar" style={{margin:"auto"}} username="pranshushuklagithub"/>
 
-        <Image id="github-streak-stats" src="https://streak-stats.demolab.com?user=pranshushuklagithub&theme=vue-dark&border_radius=10)(https://git.io/streak-stats)" m="auto" mt="2%"></Image>
+        <Image id="github-streak-stats" src="https://streak-stats.demolab.com?user=pranshushuklagithub&theme=vue-dark&border_radius=10)(https://git.io/streak-stats)github-readme-streak-stats.herokuapp.com" m="auto" mt="2%"></Image>
         <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranshushuklagithub" m="auto" mt="2%"></Image>
         <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=pranshushuklagithub&show_icons=true&locale=en" m="auto" mt="2%"></Image>
         </Box>
@@ -70,3 +70,5 @@ export default function Skills() {
         
     </Box>
 }
+
+// https://streak-stats.demolab.com?user=pranshushuklagithub&theme=vue-dark&border_radius=10)(https://git.io/streak-stats)' to include 'github-readme-streak-stats.herokuapp.com
