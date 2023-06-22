@@ -22,10 +22,14 @@ function App() {
         {/* {comp==="home"?<Home/>:comp==="about"?<About/>:comp==="skills"?<Skills/>:comp==="projects"?<Projects/>:comp==="contact"?<Contact/>:false} */}
         <Navbar comp={comp} setComp={setComp}/>
         <Home/>
+        <Navbar comp={comp} setComp={setComp}/>
         <About/>
+        <Navbar comp={comp} setComp={setComp}/>
         <Skills/>
+        <Navbar comp={comp} setComp={setComp}/>
         <Projects/>
         <Contact/>
+        
       
       </Box>
     </Box>
