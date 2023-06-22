@@ -21,14 +21,14 @@ export default function About() {
         <Box  w = "50%" fontSize={["md","lg","xl"]} m="auto" mt="2%" id="user-detail-name">
         A passionate Software developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision. Looking forward to join a progressive organization with opportunities to work on significant projects.
         </Box>
-        <Button onClick={onOpen} ml="25%" mt="5%" w ={["85px","105px","125px"]} h={["20px","30px","40px"]} fontSize={["5px","7px","12px"]}  _hover={{bg:"green.300",color:"black"}} colorScheme="teal">See My Qualifications</Button>
+        <Box as="Button" borderRadius="lg" overflow="-moz-initial" onClick={onOpen} ml="25%" mt="5%" w ={["85px","105px","125px"]} h={["20px","30px","40px"]} fontSize={["5px","7px","12px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white">See My Qualifications</Box>
         {isOpen?<Qualifications onOpen={onOpen} onClose={onClose} isOpen={isOpen}/>:false}
         </Box>
     </Flex>
     <Flex w="40%" justify="left" gap="5%" m="auto" id="about_contact">
                 
-            <Button w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} colorScheme="teal" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Button>
-            <Button w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} colorScheme="teal" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Button>
+            <Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Box>
+            <Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Box>
                 
     </Flex>
     

@@ -1,4 +1,4 @@
-import { Box, SimpleGrid,Image,Text, Button, Heading,Link,Card, CardBody, CardFooter,Stack,Divider,ButtonGroup } from "@chakra-ui/react";
+import { Box, SimpleGrid,Image,Text, Button, Heading,Link,Card, CardBody, CardFooter,Stack,Divider,ButtonGroup, Center } from "@chakra-ui/react";
 
 
 
@@ -8,7 +8,7 @@ export default function Projects(){
     const projects = [
         {
             name:"Razer.com-Clone",
-            image:"https://pranshushuklagithub.github.io/Images/razer.png",
+            image:"./Images/razer.png",
             description:"An e-commerce website(USA based), where people can explore and buy electronic products.",
             github:"https://github.com/hasbealam/razer.com-clone.git",
             live:"razer-clone-blush.vercel.app/",
@@ -33,7 +33,7 @@ export default function Projects(){
         {
             name:"Travelious.com-Clone",
             image:"https://pranshushuklagithub.github.io/Images/travalious.png",
-            description:"Leading Ecommerce which offers various travel and tours services.",
+            description:"Leading Ecommerce in online travel services which offers various travel and tours services.",
             github:"https://github.com/arsh459/Bewakoof-clone.git",
             live:"https://travelious-clone-app.vercel.app/",
             techStack : "ReactJS | ChakraUI | REDUX | JAVASCRIPT | CSS | Mongodb | NodeJS | Express"
@@ -51,29 +51,29 @@ export default function Projects(){
    
 
     return <Box id="projects" p={["25%","17%","2%"]} bg="green.200">
-        <SimpleGrid w="90%" textAlign="left" p="1%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card">
+        <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="1%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card">
         
         {
             projects.map((e)=>{
                 return (
 
-        <Card w="100%" h="100%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card">
-                <CardBody>
+        <Box w="100%" h="100%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center">
+                <Box p="2%">
                     <Image src={e.image} alt={e.name} borderRadius='lg' className="project-title"/>
                     <Stack mt='3' spacing='1'>
                         <Heading  fontSize={["13px","17px","25px"]} mt="3%" mb="3%" className="project-title">{e.name}</Heading>
                         <Text fontSize={["10px","14px","17px"]} fontWeight="bold" mt="1%"  className="project-description">{e.description}</Text>
                         <Text fontSize={["10px","13px","15px"]} fontWeight="bold" mt="1%"  className="project-tech-stack">{e.techStack}</Text>
                     </Stack>
-                </CardBody>
-            <Divider />
-            <CardFooter>
+                </Box>
+            
+            <Box p="2%">
                 <ButtonGroup spacing='3'>
-                    <Button variant='solid' colorScheme='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}}  color="white" mr="1%" className="project-github-link"><Link href={e.github} isExternal>Github </Link></Button>
-                    <Button variant='ghost' colorScheme='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]} className="project-deployed-link"><Link href={e.live} isExternal>Live</Link></Button>
+                    <Box  as ="Button"  bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}}  color="white" mr="1%" className="project-github-link" borderRadius="lg"><Link href={e.github} isExternal>Github </Link></Box>
+                    <Box as ="Button" bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]} className="project-deployed-link"  color="white" _hover={{bg:"green.300",color:"black"}} borderRadius="lg"><Link href={e.live} isExternal >Live</Link></Box>
                 </ButtonGroup>
-            </CardFooter>
-        </Card>
+            </Box>
+        </Box>
         )})
         }
 

@@ -9,29 +9,31 @@ import Skills from './Components/Skills';
 import { Box } from '@chakra-ui/react';
 
 
+
+
 function App() {
   let [comp,setComp] = useState("home")
   useEffect(()=>{
     console.log(comp)
+
   },[comp])
 
   return (
-    <Box className="App" bg="green.200" id="nav-menu">
+    <Box className="App" bg="green.200" id="nav-menu" overflow="hidden">
       
-      <Box h="640px" bg="green.200"> 
+      
         {/* {comp==="home"?<Home/>:comp==="about"?<About/>:comp==="skills"?<Skills/>:comp==="projects"?<Projects/>:comp==="contact"?<Contact/>:false} */}
-        <Navbar comp={comp} setComp={setComp}/>
+         <Navbar comp={comp} setComp={setComp}/>
         <Home/>
-        <Navbar comp={comp} setComp={setComp}/>
         <About/>
-        <Navbar comp={comp} setComp={setComp}/>
         <Skills/>
-        <Navbar comp={comp} setComp={setComp}/>
         <Projects/>
-        <Contact/>
+        <Contact/> 
+
+       
         
       
-      </Box>
+     
     </Box>
 
   )

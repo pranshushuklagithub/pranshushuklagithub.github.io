@@ -31,8 +31,8 @@ export default function Contact() {
 
             <Flex w="40%" justify="left" gap="5%">
                 
-                    <Button w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Button>
-                    <Button w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Button>
+                    <Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Box>
+                    <Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Box>
                 
             </Flex>
         </Box>
