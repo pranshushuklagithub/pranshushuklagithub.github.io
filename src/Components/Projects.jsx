@@ -50,7 +50,7 @@ export default function Projects(){
     ]
    
 
-    return <Box id="projects" p={["25%","17%","2%"]} bg="green.200">
+    return <Box id="projects" p={["25%","17%","2%"]} bg="green.200" h="100%">
         <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="1%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card">
         
         {

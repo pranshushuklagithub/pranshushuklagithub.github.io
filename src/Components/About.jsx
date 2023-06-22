@@ -6,7 +6,7 @@ import Qualifications from "./Qualifications";
 export default function About() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    return <Box p="3%" bg="green.200" textAlign="center" id="about" className="about section">
+    return <Box p="3%" bg="green.200" textAlign="center" id="about" className="about section" h="100%">
         <Heading id="user-detail-name" fontSize={["xl","2xl","4xl"]} mb="5%"> About me</Heading>
         <Flex w="95%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-evenly" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="4%">
         <Box w="40%">

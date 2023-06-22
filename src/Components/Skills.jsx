@@ -2,7 +2,7 @@ import { Box, Text,Card,CardBody,Image,Stack,CardFooter,Button, Flex } from "@ch
 import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
-    return <Box id="skills" p="2%" bg="green.200" textAlign="left">
+    return <Box id="skills" p="2%" bg="green.200" textAlign="left" h="100%">
         <Box>
         <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/softskillcover.jpg'alt='softskills'/>

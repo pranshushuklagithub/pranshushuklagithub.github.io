@@ -2,7 +2,7 @@ import { Box, Heading, Text,Image, Flex,Button,Link } from "@chakra-ui/react";
 import { downloadResume } from "./Functions/function";
 
 export default function Home() {
-    return <Box mt="2%" id="home" h="600px">
+    return <Box mt="2%" id="home" h="100%">
         <Flex  bg="green.200" p="3%" h="100%" flexWrap="wrap" alignItems="center">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
             <Image className="home-img" src="https://pranshushuklagithub.github.io/Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
