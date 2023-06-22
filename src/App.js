@@ -12,27 +12,42 @@ import { Box } from '@chakra-ui/react';
 
 
 function App() {
-  let [comp,setComp] = useState("home")
+  let [comp,setComp] = useState("")
   useEffect(()=>{
-    console.log(comp)
-
+    // console.log(comp)
+// window.onscroll=() =>{
+//   handlePage();
+// }
   },[comp])
 
+  // let box = document.getElementsByClassName("App");
+
+  // function handlePage() {
+    
+  //   let height = box
+  //   box.scrollTop = box.scrollTop - height;
+  // }
+
   return (
-    <Box className="App" bg="green.200" id="nav-menu" overflow="hidden">
+    <Box className="App" bg="green.200">
       
       
-        {/* {comp==="home"?<Home/>:comp==="about"?<About/>:comp==="skills"?<Skills/>:comp==="projects"?<Projects/>:comp==="contact"?<Contact/>:false} */}
+        
          <Navbar comp={comp} setComp={setComp}/>
+         
+
+       { comp==="home"?<Box p="5%"><Home/></Box>:comp==="about"?<Box p="3%"><About/></Box>:comp==="skills"? <Box p="5%"><Skills/></Box>:comp==="projects"?<Box p="5%"><Projects/></Box>:comp==="contact"? <Box p="11%"><Contact/></Box>:
+       
+       <Box p="3%">
+
         <Home/>
         <About/>
         <Skills/>
         <Projects/>
-        <Contact/> 
+        <Contact/>
 
-       
-        
-      
+       </Box>
+       } 
      
     </Box>
 

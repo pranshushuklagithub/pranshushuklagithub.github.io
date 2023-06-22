@@ -33,6 +33,11 @@ const Imagecarousel = () => {
         document.getElementById("bar").style.width = scrolled + "%";
       }
 
+      const btnpressprev = () => {
+        let height = box.clientHeight;
+        box.scrollTop = box.scrollTop - height;
+        console.log(height)
+    }
     
     return (
         <div className="product-carousel" >
