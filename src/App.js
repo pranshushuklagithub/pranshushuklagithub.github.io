@@ -13,10 +13,10 @@ import { Box } from '@chakra-ui/react';
 
 function App() {
   let [comp,setComp] = useState("home")
-  
+  let [theme,setTheme] = useState("light")
 
   return (
-    <Box className="App" bg="white">
+    <Box className="App" bg={theme==="dark"?"InactiveBorder":"whitesmoke"} color={theme==="dark"?"telegram.100":false}>
       
       
         
