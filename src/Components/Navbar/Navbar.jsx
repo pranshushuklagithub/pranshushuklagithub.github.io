@@ -26,7 +26,7 @@ export default function Navbar({comp,setComp}){
         <a href="#contact"><Button className="nav-link contact" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg={comp==="contact"?"black":"tomato"} color="white" _hover={{bg:"green.300",color:"black"}} onClick={()=>{
             setComp("contact")}} fontSize={["7px","10px","17px"]}>Contact</Button></a>
         
-        <Link id="resume-link-1" href="https://drive.google.com/file/d/1kNSn3WLdCenTcHoQ7-o_fYYZT66umVnp/view?usp=sharing" isExternal ><Button className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["7px","10px","17px"]} onClick={downloadResume} id="resume-button-1">Resume</Button></Link>
+        <Link id="resume-link-1" href="https://drive.google.com/file/d/1kNSn3WLdCenTcHoQ7-o_fYYZT66umVnp/view?usp=sharing" isExternal onClick={downloadResume}><Button className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["7px","10px","17px"]}  id="resume-button-1">Resume</Button></Link>
         </Flex>
     </Flex>
     </Box>

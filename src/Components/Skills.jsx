@@ -9,7 +9,7 @@ export default function Skills() {
         <Box mt="2%">
 
         <Box display="flex" w="70%"  m="auto"   className="skills-card" alignItems="center" gap="3%">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/softskillcover.jpg'alt='softskills'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/softskillcover.jpg'alt='softskills' w={["base","sm","md","lg","xl"]}/>
 
             <Stack textAlign="left">
                 <Box >
