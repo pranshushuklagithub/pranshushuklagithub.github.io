@@ -34,7 +34,7 @@ export default function Projects(){
             name:"Travelious.com-Clone",
             image:"./Images/travalious.png",
             description:"Leading Ecommerce in online travel services which offers various travel and tours services.",
-            github:"https://github.com/arsh459/Bewakoof-clone.git",
+            github:"https://github.com/pranshushuklagithub/travelious-clone",
             live:"https://travelious-clone-app.vercel.app/",
             techStack : "ReactJS | ChakraUI | REDUX | JAVASCRIPT | CSS | Mongodb | NodeJS | Express"
         },
@@ -43,7 +43,7 @@ export default function Projects(){
             image:"./Images/portfoliocover.png",
             description:"Leading Ecommerce which offers various travel and tours services.",
             github:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
-            live:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
+            live:"https://pranshushuklagithub.github.io",
             techStack : "ReactJS | ChakraUI | JAVASCRIPT | CSS "
         }
         
