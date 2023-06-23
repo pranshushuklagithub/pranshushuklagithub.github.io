@@ -11,7 +11,7 @@ export default function Home() {
         <Box  w="80%"  id="user-detail-intro" m="auto">
         <Text fontSize={["xl","2xl","4xl"]} >Hi ! This is </Text>
         <Heading fontSize={["2xl","3xl","5xl"]} color="tomato" _hover={{color:"gray"}}>Pranshu Shukla</Heading>
-        <Text fontSize={["xl","2xl","4xl"]} fontWeight="semibold" id="user-detail-intro" >(I am a Software Developer)</Text> 
+        <Text fontSize={["xl","2xl","4xl"]} fontWeight="semibold" id="user-detail-intro" >(I am a Full Stack Web Developer)</Text> 
         </Box>
         <Box w="80%"  id="user-detail-intro" m="auto" overflow="hidden">
         <Text fontSize={["md","lg","xl"]} fontWeight="semibold" id="user-detail-intro" >Here you will find the best of my work that will help you to analyse my productivity as well as capability.
