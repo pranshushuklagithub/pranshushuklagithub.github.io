@@ -8,7 +8,7 @@ export default function About() {
 
     return <Box p="6%" bg="green.200" textAlign="center" id="about" className="about section">
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%"> About me</Heading>
-        <Flex minW="50%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-evenly" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="4%">
+        <Flex w="50%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-evenly" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="4%">
         <Box w="40%">
             <Image src="./Images/aboutcover.png" w="100%" borderRadius="3xl"></Image>
         </Box>
