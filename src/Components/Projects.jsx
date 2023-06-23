@@ -50,9 +50,9 @@ export default function Projects(){
     ]
    
 
-    return <Box id="projects" p="6%" bg="green.200">
+    return <Box id="projects" p="6%" >
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Projects</Heading>
-        <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="1%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card">
+        <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="4%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card" >
         
         {
             projects.map((e)=>{
@@ -70,8 +70,8 @@ export default function Projects(){
             
             <Box p="2%">
                 <ButtonGroup spacing='3'>
-                    <Box  as ="Button"  bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}}  color="white" mr="1%" className="project-github-link" borderRadius="lg"><Link href={e.github} isExternal>Github </Link></Box>
-                    <Box as ="Button" bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]} className="project-deployed-link"  color="white" _hover={{bg:"green.300",color:"black"}} borderRadius="lg"><Link href={e.live} isExternal >Live</Link></Box>
+                <Link href={e.github} isExternal><Box  as ="Button"  bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}}  color="white" mr="1%" className="project-github-link" borderRadius="lg">Github </Box></Link>
+                <Link href={e.live} isExternal ><Box as ="Button" bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]} className="project-deployed-link"  color="white" _hover={{bg:"green.300",color:"black"}} borderRadius="lg">Live</Box></Link>
                 </ButtonGroup>
             </Box>
         </Box>

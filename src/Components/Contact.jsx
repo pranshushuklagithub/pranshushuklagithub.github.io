@@ -3,15 +3,15 @@ import {EmailIcon,PhoneIcon} from "@chakra-ui/icons"
 
 
 export default function Contact() {
-    return <Box id="contact" bg="green.200"  p="6%" >
+    return <Box id="contact"  p="6%" >
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]}> Contacts</Heading>
-        <Box  alignItems="center"  mt="15%">
-            <Flex flexWrap="wrap" w="80%" m="auto" justify="space-between" alignItems="center">
+        
+    <Flex flexWrap="wrap" w="80%" m="auto" justify="space-between" mt="15%">
             <Box w="45%">
             <Image src="./Images/socialmedia.jpg" w="100%" borderRadius="2xl"></Image>
             </Box>
         
-        <Box w="50%"  p="3%" textAlign="left" color={["teal","teal","black"]} > 
+        <Box w="50%"  p="3%" textAlign="left" > 
             <Box  mb="5%">
             <Heading fontSize={["xl","2xl","3xl"]} > My Contact Details Are Here</Heading>
             </Box>
@@ -31,14 +31,14 @@ export default function Contact() {
 
             <Flex w="40%" justify="left" gap="5%">
                 
-                    <Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Box>
-                    <Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Box>
+            <Link href="https://github.com/pranshushuklagithub" isExternal><Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-github">Github </Box></Link>
+            <Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal><Box as="Button" borderRadius="xl" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg = "tomato" color="white" id="contact-linkedin">Linkedin</Box></Link>
                 
             </Flex>
         </Box>
             
-            </Flex>    
+    </Flex>    
 
-    </Box>
+    
     </Box>
 }

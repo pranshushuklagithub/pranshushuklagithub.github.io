@@ -2,13 +2,16 @@ import { Box, Text,Image,Stack,Heading, Flex } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
-    return <Box id="skills" p="6%" bg="green.200"  >
+    return <Box id="skills" p="6%"  >
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Skills</Heading>
-        <Box textAlign="left">
-        <Box display="flex" w="70%"  m="auto" bg="green.100"  className="skills-card" alignItems="center" gap="3%">
+        
+
+        <Box mt="2%">
+
+        <Box display="flex" w="70%"  m="auto"   className="skills-card" alignItems="center" gap="3%">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/softskillcover.jpg'alt='softskills'/>
 
-            <Stack>
+            <Stack textAlign="left">
                 <Box >
                 <Text fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name">Soft Skills</Text>
                 </Box>
@@ -18,18 +21,15 @@ export default function Skills() {
                 </Box>
             </Stack>
         </Box>
-        </Box>
-
-        <Box mt="2%">
-        <Box display="flex" w="70%" flexWrap="wrap" m="auto" bg="green.100"  className="skills-card" alignItems="center" gap="3%">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/frontendcover.jpg'alt='frontend' h="175px" />
+        <Box display="flex" w="70%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%">
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/frontendcover.jpg'alt='frontend'  />
 
             <Stack textAlign="left">
                 
-                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">FrontEnd Tech Stack</Text>
+                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" >Front End </Text>
                 
 
-                <Flex gap="2%" p="2%">
+                <Flex gap="2%" >
                     <Box as ="Button"  borderRadius="xl" bg='yellow' w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>HTML</Box>
                     <Box as ="Button" color = "white" borderRadius="xl" bg='red' w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>CSS</Box>
                     <Box as ="Button" borderRadius="xl" bg='yellow' w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>JS</Box>
@@ -40,17 +40,16 @@ export default function Skills() {
                 </Flex>
             </Stack>
         </Box>
-        </Box>
-        <Box mt="2%" mb="2%">
-        <Box display="flex" w="70%" flexWrap="wrap" m="auto" bg="green.100"  className="skills-card" alignItems="center" gap="3%">
+
+        <Box display="flex" w="70%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%"n>
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/backendcover.jpg'alt='backend' />
 
             <Stack textAlign="left" >
                 
-                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">BackEnd Tech Stack</Text>
+                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">Back End </Text>
                 
 
-                <Flex gap="2%" p="2%">
+                <Flex gap="2%" >
                     <Box as ="Button"  borderRadius="xl" bg='yellow' w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>NodeJS</Box>
                     <Box as ="Button" color = "white" bg='red' borderRadius="xl" w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>Express</Box>
                     <Box as ="Button" color = "white" bg='green' borderRadius="xl" w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>MongoDB</Box>
@@ -58,8 +57,9 @@ export default function Skills() {
             </Stack>
         </Box>
         </Box>
+        
 
-        <Box  className="react-activity-calendar" textAlign="center" p="3%" bg="green.100">
+        <Box  className="react-activity-calendar" textAlign="center" p="3%" >
         <Text fontSize={["xl","2xl","4xl"]} mb="3%" color="teal">My GitHub Statistics</Text>
         <GitHubCalendar className="react-activity-calendar" style={{margin:"auto"}} username="pranshushuklagithub"/>
 

@@ -6,9 +6,9 @@ import Qualifications from "./Qualifications";
 export default function About() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    return <Box p="6%" bg="green.200" textAlign="center" id="about" className="about section">
+    return <Box p="6%" textAlign="center" id="about" className="about section">
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%"> About me</Heading>
-        <Flex w="100%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-between" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="2%">
+        <Flex w="100%" m="auto" mb="2%" id="about" className="about section"  alignItems="center" justify="space-between" flexWrap="wrap" p="2%">
         <Box w="40%">
             <Image src="./Images/aboutcover.png" w="100%" borderRadius="3xl"></Image>
         </Box>
@@ -28,8 +28,8 @@ export default function About() {
     </Flex>
     <Flex w="40%" justify="left" gap="5%" m="auto" id="about_contact">
                 
-            <Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-github"><Link href="https://github.com/pranshushuklagithub" isExternal>Github </Link></Box>
-            <Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-linkedin"><Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal>Linkedin</Link></Box>
+    <Link href="https://github.com/pranshushuklagithub" isExternal><Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-github">Github </Box></Link>
+    <Link href="https://www.linkedin.com/in/pranshu-shukla-at/" isExternal><Box as="Button" borderRadius="lg" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white" id="contact-linkedin">Linkedin</Box></Link>
                 
     </Flex>
     

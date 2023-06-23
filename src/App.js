@@ -13,27 +13,24 @@ import { Box } from '@chakra-ui/react';
 
 function App() {
   let [comp,setComp] = useState("home")
+  
 
   return (
-    <Box className="App" bg="green.200">
+    <Box className="App" bg="white">
       
       
         
-         {/* <Navbar handleClick={handleClick} closeMenu={closeMenu}/> */}
+         
          <Navbar comp={comp} setComp={setComp}/>
          
-
+         <Home/>
+          <About/>
+          <Skills/>
+          <Projects/>
+          <Contact/>
        
 
-            <Box p="3%">
-
-                <Home/>
-                <About/>
-                <Skills/>
-                <Projects/>
-                <Contact/>
-
-            </Box>
+            
      
     </Box>
 
