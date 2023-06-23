@@ -8,7 +8,7 @@ export default function About() {
 
     return <Box p="6%" bg="green.200" textAlign="center" id="about" className="about section">
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%"> About me</Heading>
-        <Flex w="50%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-evenly" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="4%">
+        <Flex w="100%" m="auto" mb="2%" id="about" className="about section"  bg="green.100" alignItems="center" justify="space-between" flexWrap="wrap" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" p="2%">
         <Box w="40%">
             <Image src="./Images/aboutcover.png" w="100%" borderRadius="3xl"></Image>
         </Box>
@@ -19,7 +19,7 @@ export default function About() {
         <Heading id="user-detail-name" fontSize={["lg","xl","3xl"]}> A Software Developer</Heading>
         
         </Box>
-        <Box  w = "50%" fontSize={["md","lg","xl"]} m="auto" mt="2%" id="user-detail-name">
+        <Box  w = "50%" fontSize={["md","lg","xl"]} m="auto" mt="2%" id="user-detail-name" >
         A passionate Full Stack Web developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision.skilled in Node.JS. Experienced in Developing websites using JavaScript, Node.js, Express.js, MongoDB.Looking forward to join a progressive organization with opportunities to work on significant projects.
         </Box>
         <Box as="Button" borderRadius="lg" overflow="-moz-initial" onClick={onOpen} ml="25%" mt="5%" w ={["85px","105px","125px"]} h={["20px","30px","40px"]} fontSize={["5px","7px","12px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white">See My Qualifications</Box>
