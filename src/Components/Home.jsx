@@ -1,11 +1,11 @@
-import { Box, Heading, Text,Image, Flex,Button,Link } from "@chakra-ui/react";
+import { Box, Heading, Text,Image, Flex,Link } from "@chakra-ui/react";
 import { downloadResume } from "./Functions/function";
 
 export default function Home() {
-    return <Box mt="2%" id="home" h="100%">
-        <Flex  bg="green.200" p="3%" h="100%" flexWrap="wrap" alignItems="center">
+    return <Box  id="home" h="100%" p="6%" bg="green.200">
+        <Flex  bg ="green.100" p="5%" flexWrap="wrap" alignItems="center" mt="6%">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
-            <Image className="home-img" src="https://pranshushuklagithub.github.io/Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
+            <Image className="home-img" src="./Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
         </Box>
         <Box  textAlign="left">
         <Box  w="80%"  id="user-detail-intro" m="auto">

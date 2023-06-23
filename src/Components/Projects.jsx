@@ -1,4 +1,4 @@
-import { Box, SimpleGrid,Image,Text, Button, Heading,Link,Card, CardBody, CardFooter,Stack,Divider,ButtonGroup, Center } from "@chakra-ui/react";
+import { Box, SimpleGrid,Image,Text, Heading,Link,Stack,ButtonGroup,} from "@chakra-ui/react";
 
 
 
@@ -16,7 +16,7 @@ export default function Projects(){
         },
         {
             name:"Tata1MG.com-Clone",
-            image:"https://pranshushuklagithub.github.io/Images/tata1mg.png",
+            image:"./Images/tata1mg.png",
             description:"Tata's leading ecommerce website, where people can explore and buy pharma products.",
             github:"https://github.com/pranshushuklagithub/tata1mg-clone.git",
             live:"https://648b7445ccba720a9e352702--deft-pika-7adc6a.netlify.app/",
@@ -24,7 +24,7 @@ export default function Projects(){
         },
         {
             name:"Bewakoof.com-Clone",
-            image:"https://pranshushuklagithub.github.io/Images/bewakoof.png",
+            image:"./Images/bewakoof.png",
             description:"A leading ecommerce in Fashion industry, where people can explore and buy fashion products.",
             github:"https://github.com/arsh459/Bewakoof-clone.git",
             live:"https://magical-creponne-d53ec4.netlify.app/",
@@ -32,7 +32,7 @@ export default function Projects(){
         },
         {
             name:"Travelious.com-Clone",
-            image:"https://pranshushuklagithub.github.io/Images/travalious.png",
+            image:"./Images/travalious.png",
             description:"Leading Ecommerce in online travel services which offers various travel and tours services.",
             github:"https://github.com/arsh459/Bewakoof-clone.git",
             live:"https://travelious-clone-app.vercel.app/",
@@ -40,7 +40,7 @@ export default function Projects(){
         },
         {
             name:"Portfolio Website",
-            image:"https://pranshushuklagithub.github.io/Images/portfoliocover.png",
+            image:"./Images/portfoliocover.png",
             description:"Leading Ecommerce which offers various travel and tours services.",
             github:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
             live:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
@@ -50,15 +50,16 @@ export default function Projects(){
     ]
    
 
-    return <Box id="projects" p={["25%","17%","2%"]} bg="green.200" h="100%">
+    return <Box id="projects" p="6%" bg="green.200">
+        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Projects</Heading>
         <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="1%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card">
         
         {
             projects.map((e)=>{
                 return (
 
-        <Box w="100%" h="100%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center">
-                <Box p="2%">
+        <Box w="100%"  boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center" borderRadius="2%" p="3%">
+                <Box p="2%" >
                     <Image src={e.image} alt={e.name} borderRadius='lg' className="project-title"/>
                     <Stack mt='3' spacing='1'>
                         <Heading  fontSize={["13px","17px","25px"]} mt="3%" mb="3%" className="project-title">{e.name}</Heading>

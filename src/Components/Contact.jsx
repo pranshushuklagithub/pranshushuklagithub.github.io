@@ -1,19 +1,19 @@
-import { Box, Flex, Heading,IconButton,Link,Text,Button,Image } from "@chakra-ui/react";
+import { Box, Flex, Heading,IconButton,Link,Text,Image } from "@chakra-ui/react";
 import {EmailIcon,PhoneIcon} from "@chakra-ui/icons"
 
 
 export default function Contact() {
-    return <Box  id="contact" bg="green.200" w = "100%" p="4%" alignItems="center" h="100%">
-
+    return <Box id="contact" bg="green.200"  p="6%" >
+        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]}> Contacts</Heading>
+        <Box  alignItems="center"  mt="15%">
             <Flex flexWrap="wrap" w="80%" m="auto" justify="space-between" alignItems="center">
-
-            <Box w="40%" borderRadius="10%">
-            <Image src="http://pranshushuklagithub.github.io/Images/socialmedia.jpg" w="100%" borderRadius="10%"></Image>
+            <Box w="45%">
+            <Image src="./Images/socialmedia.jpg" w="100%" borderRadius="2xl"></Image>
             </Box>
         
-        <Box w="60%"  p="3%" justifyContent="left" color={["teal","teal","black"]}> 
-            <Box textAlign="left" mb="5%">
-            <Heading fontSize={["lg","xl","4xl"]}> My Contact Details Are Here</Heading>
+        <Box w="50%"  p="3%" textAlign="left" color={["teal","teal","black"]} > 
+            <Box  mb="5%">
+            <Heading fontSize={["xl","2xl","3xl"]} > My Contact Details Are Here</Heading>
             </Box>
 
             <Flex id="contact-phone" gap="2%" alignItems="center" justifyContent="left" w="40%" mb="5%">
@@ -39,5 +39,6 @@ export default function Contact() {
             
             </Flex>    
 
+    </Box>
     </Box>
 }

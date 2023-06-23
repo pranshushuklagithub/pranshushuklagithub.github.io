@@ -1,11 +1,12 @@
-import { Box, Text,Card,CardBody,Image,Stack,CardFooter,Button, Flex } from "@chakra-ui/react";
+import { Box, Text,Image,Stack,Heading, Flex } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
-    return <Box id="skills" p="2%" bg="green.200" textAlign="left" h="100%">
-        <Box>
+    return <Box id="skills" p="6%" bg="green.200"  >
+        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Skills</Heading>
+        <Box textAlign="left">
         <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/softskillcover.jpg'alt='softskills'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/softskillcover.jpg'alt='softskills'/>
 
             <Stack>
                 <Box >
@@ -21,7 +22,7 @@ export default function Skills() {
 
         <Box mt="2%">
         <Box direction={{ base: 'column', sm: 'row' }}   w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/frontendcover.jpg'alt='frontend'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/frontendcover.jpg'alt='frontend'/>
 
             <Stack>
                 <Box>
@@ -42,7 +43,7 @@ export default function Skills() {
         </Box>
         <Box mt="2%" mb="2%">
         <Box direction={{ base: 'column', sm: 'row' }} w="70%" m="auto" bg="green.100" p="2%" className="skills-card">
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='https://pranshushuklagithub.github.io/Images/backendcover.jpg'alt='backend'/>
+            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/backendcover.jpg'alt='backend'/>
 
             <Stack>
                 <Box>
@@ -58,7 +59,7 @@ export default function Skills() {
         </Box>
         </Box>
 
-        <Box  className="react-activity-calendar" textAlign="center" p="3%" >
+        <Box  className="react-activity-calendar" textAlign="center" p="3%" bg="green.100">
         <Text fontSize={["xl","2xl","4xl"]} mb="3%" color="teal">My GitHub Statistics</Text>
         <GitHubCalendar className="react-activity-calendar" style={{margin:"auto"}} username="pranshushuklagithub"/>
 
