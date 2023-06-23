@@ -26,7 +26,7 @@ export default function Skills() {
 
             <Stack textAlign="left">
                 
-                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">FrontEnd</Text>
+                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">FrontEnd Tech Stack</Text>
                 
 
                 <Flex gap="2%" p="2%">
@@ -47,7 +47,7 @@ export default function Skills() {
 
             <Stack textAlign="left" >
                 
-                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">BackEnd</Text>
+                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">BackEnd Tech Stack</Text>
                 
 
                 <Flex gap="2%" p="2%">
