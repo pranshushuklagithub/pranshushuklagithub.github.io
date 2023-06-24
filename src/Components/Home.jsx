@@ -16,11 +16,8 @@ export default function Home() {
         <Box w="80%"  id="user-detail-intro" m="auto" overflow="hidden">
         <Text fontSize={["md","lg","xl"]} fontWeight="semibold" id="user-detail-intro" >Here you will find the best of my work that will help you to analyse my productivity as well as capability.
         </Text>
-        <Box  as="Button" border="2px" overflow="hidden" mt="2%" className="nav-link resume" w ={["40px","60px","100px"]} h={["20px","30px","50px"]} bg="green.400" color="white" _hover={{bg:"green.300",color:"black"}}fontSize={["7px","10px","17px"]} borderRadius="xl"  id="resume-button-2" onClick={(e)=>{
-            downloadResume(e)
-        }}><Link href="https://drive.google.com/file/d/1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h/view?usp=sharing"  id="resume-link-2" isExternal >Resume</Link></Box>
+        <Box  as="Button" border="2px" mt="2%" className="nav-link resume" w ={["40px","60px","100px"]} h={["20px","30px","50px"]} bg="green.400" color="white" _hover={{bg:"green.300",color:"black"}}fontSize={["7px","10px","17px"]} borderRadius="xl"  id="resume-button-2" ><Link href="https://drive.google.com/file/d/1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h/view?usp=sharing"  id="resume-link-2" isExternal >Resume</Link></Box>
         </Box>
-        
         </Box>
     </Flex>
     </Box>
