@@ -1,12 +1,23 @@
 
-import {Box, Button, Flex, Heading, Text,Link} from "@chakra-ui/react"
-import { downloadResume } from "../Functions/function";
+import {Box, Button, Flex, Heading, Text} from "@chakra-ui/react"
+// import { downloadResume } from "../Functions/function";
 
 
 
 export default function Navbar({comp,setComp}){
     // console.log(comp)
-    
+    const downloadResume=()=>{
+        window.open("https://drive.google.com/file/d/1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h/view?usp=sharing")
+        const fileURL = "https://drive.google.com/uc?export=download&id=1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h";
+                
+               console.log("hash")
+                 // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                // alink.download = 'Pranshu_Shukla_Resume';
+                alink.click();
+    }
+
     return <Box id="nav-menu" bg="MenuText" p="1%" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" w="100%"  position="fixed">
         <Flex w="100%" justify="space-evenly" flexWrap={["wrap"]}>
         <a href = "#home" onClick={()=>{
@@ -26,7 +37,9 @@ export default function Navbar({comp,setComp}){
         <a href="#contact"><Button className="nav-link contact" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg={comp==="contact"?"black":"tomato"} color="white" _hover={{bg:"green.300",color:"black"}} onClick={()=>{
             setComp("contact")}} fontSize={["7px","10px","17px"]}>Contact</Button></a>
         
-        <Button  className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["7px","10px","17px"]}  id="resume-button-1" ><Link  id="resume-link-1" href="https://drive.google.com/file/d/1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h/view?usp=sharing"  isExternal >Resume</Link></Button>
+        <Button className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["7px","10px","17px"]}  id="resume-button-1" onClick={()=>{
+                console.log("anything")
+        }}><a id="resume-link-1">Resume</a></Button>
         </Flex>
     </Flex>
     </Box>
