@@ -28,7 +28,7 @@ export default function Navbar({comp,setComp}){
         
         <Button  className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["7px","10px","17px"]}  id="resume-button-1" onClick={(e)=>{
             downloadResume(e)
-        }}><Link  id="resume-link-1" href="./images/Pranshu_Shukla_Resume.pdf"  isExternal>Resume</Link></Button>
+        }}><Link  id="resume-link-1" href="https://drive.google.com/file/d/1wOhjFp3m5wa1uqpqTEeIPV8iWZkaKb7h/view?usp=sharing"  isExternal>Resume</Link></Button>
         </Flex>
     </Flex>
     </Box>
