@@ -20,7 +20,7 @@ export default function About() {
         
         </Box>
         <Box  w = "100%" fontSize={["sm","md","lg"]} m="auto" mt="2%" id="user-detail-name" >
-        A passionate Full Stack Web developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision. Skilled in ReactJS, Node.Js, Express.Js, MongoDB, HTML, CSS, JavaScript, problem- solving and execution of software tasks. Looking forward to join a progressive organization with opportunities to work on significant projects & technologies.
+            <Text>A passionate Full Stack Web developer with considerable technical skills who possess self-discipline and the ability to work with minimum supervision. Skilled in ReactJS, NodeJS, Express.Js, MongoDB, HTML, CSS, JavaScript, problem- solving and execution of software tasks. Looking forward to join a progressive organization with opportunities to work on significant projects & technologies.</Text>
         </Box>
         <Box as="Button" m="auto" borderRadius="lg" overflow="-moz-initial" onClick={onOpen} ml="25%" mt="5%" w ={["85px","105px","125px"]} h={["20px","30px","40px"]} fontSize={["5px","7px","12px"]}  _hover={{bg:"green.300",color:"black"}} bg="teal" color="white">See My Qualifications</Box>
         {isOpen?<Qualifications onOpen={onOpen} onClose={onClose} isOpen={isOpen}/>:false}
