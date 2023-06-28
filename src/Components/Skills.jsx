@@ -2,13 +2,13 @@ import { Box, Text,Image,Stack,Heading, Flex } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
-    return <Box id="skills" p="6%"  >
+    return <Box id="skills" p="6%"  w="100%" m="auto">
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Skills</Heading>
         
 
-        <Box mt="2%">
+        <Box mt="2%" m="auto">
 
-        <Box display="flex" w="70%"  m="auto"   className="skills-card" alignItems="center" gap="3%">
+        <Box display="flex" w="80%"  m="auto"   className="skills-card" alignItems="center" gap="3%" flexWrap="wrap">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/softskillcover.jpg'alt='softskills' w={["base","sm","md","lg","xl"]}/>
 
             <Stack textAlign="left">
@@ -21,7 +21,7 @@ export default function Skills() {
                 </Box>
             </Stack>
         </Box>
-        <Box display="flex" w="70%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%">
+        <Box display="flex" w="80%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%">
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/frontendcover.jpg'alt='frontend'  />
 
             <Stack textAlign="left">
@@ -41,7 +41,7 @@ export default function Skills() {
             </Stack>
         </Box>
 
-        <Box display="flex" w="70%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%"n>
+        <Box display="flex" w="80%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%"n>
             <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/backendcover.jpg'alt='backend' />
 
             <Stack textAlign="left" >
@@ -59,7 +59,7 @@ export default function Skills() {
         </Box>
         
 
-        <Box  className="react-activity-calendar" textAlign="center" p="3%" >
+        <Box  className="react-activity-calendar" textAlign="center" p="3%" m="auto" w="90%">
         <Text fontSize={["xl","2xl","4xl"]} mb="3%" color="teal">My GitHub Statistics</Text>
         <GitHubCalendar className="react-activity-calendar" style={{margin:"auto"}} username="pranshushuklagithub"/>
 

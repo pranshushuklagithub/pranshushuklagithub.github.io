@@ -2,8 +2,8 @@ import { Box, Heading, Text,Image, Flex } from "@chakra-ui/react";
 import { downloadResume } from "./Functions/function";
 
 export default function Home() {
-    return <Box  id="home" h="100%" p="6%">
-        <Flex  p="5%" flexWrap="wrap" alignItems="center" mt="6%" >
+    return <Box  id="home" h="100%" p="6%" w ="100%">
+        <Flex  p="5%" flexWrap="wrap" alignItems="center" mt="6%" m="auto">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
             <Image className="home-img" src="./Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
         </Box>
@@ -16,7 +16,7 @@ export default function Home() {
         <Box w="80%"  id="user-detail-intro" m="auto" overflow="hidden">
         <Text fontSize={["md","lg","xl"]} fontWeight="semibold" id="user-detail-intro" >Here you will find the best of my work that will help you to analyse my productivity as well as capability.
         </Text>
-        <a href="#resume" id="resume-link-2"><Box  as="Button" border="2px" mt="2%" className="nav-link resume" w ={["40px","60px","100px"]} h={["20px","30px","50px"]} bg="green.400" color="white" _hover={{bg:"green.300",color:"black"}}fontSize={["7px","10px","17px"]} borderRadius="xl"  id="resume-button-2" onClick={()=>{downloadResume()}}>Resume</Box></a>
+        <a href="#resume" id="resume-link-2"><Box  as="Button" border="2px" mt="2%" className="nav-link resume" w ={["40px","60px","80px"]} h={["20px","30px","40px"]} bg="green.400" color="white" _hover={{bg:"green.300",color:"black"}}fontSize={["5px","8px","15px"]} borderRadius="xl"  id="resume-button-2" onClick={()=>{downloadResume()}}>Resume</Box></a>
         </Box>
         </Box>
     </Flex>

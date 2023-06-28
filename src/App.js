@@ -16,21 +16,18 @@ function App() {
   let [theme,setTheme] = useState("light")
 
   return (
-    <Box className="App" bg={theme==="dark"?"InactiveBorder":"whitesmoke"} color={theme==="dark"?"telegram.100":false}>
+    <Box width={{ base: "100%", md: "100%", lg: "100%" }} h={{ base: "100%", md: "100%", lg: "100%" }} className="App" bg={theme==="dark"?"InactiveBorder":"whitesmoke"} color={theme==="dark"?"telegram.100":false}>
       
-      
-        
          
-         <Navbar comp={comp} setComp={setComp}/>
+         <Navbar comp={comp} setComp={setComp} />
          
+         <Box w="100%">
          <Home/>
           <About/>
           <Skills/>
           <Projects/>
-          <Contact/>
-       
-
-            
+          <Contact/> 
+          </Box>   
      
     </Box>
 

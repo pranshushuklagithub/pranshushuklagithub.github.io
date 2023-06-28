@@ -50,15 +50,15 @@ export default function Projects(){
     ]
    
 
-    return <Box id="projects" p="6%" >
+    return <Box id="projects" p="6%" w="100%">
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Projects</Heading>
-        <SimpleGrid overflow="hidden" w="90%" textAlign="left" p="4%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card" >
+        <SimpleGrid  w="100%" textAlign="left" p="4%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card" >
         
         {
             projects.map((e)=>{
                 return (
 
-        <Box w="100%"  boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center" borderRadius="2%" p="3%">
+        <Box w="90%"  boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center" borderRadius="2%" p="3%" m="auto">
                 <Box p="2%" >
                     <Image src={e.image} alt={e.name} borderRadius='lg' className="project-title"/>
                     <Stack mt='3' spacing='1'>
