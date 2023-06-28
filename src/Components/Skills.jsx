@@ -2,7 +2,7 @@ import { Box, Text,Image,Stack,Heading, Flex } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
-    return <Box id="skills" p="6%"  w="100%" m="auto">
+    return <Box id="skills" p="6%"  w="100%" m="auto" >
         <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Skills</Heading>
         
 
