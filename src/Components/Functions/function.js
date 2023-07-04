@@ -5,8 +5,8 @@
 
 // https://drive.google.com/uc?export=download&id=1ses2VtkMl_8bzwViHhgXZi7P7fcfykTE            this is download link from google drive
 export const downloadResume=()=>{
-    window.open("https://1drv.ms/b/s!AplsJENjsBMsuyJ223S9aVrNKEP5","_blank")
-    const fileURL = "https://1drv.ms/b/s!AplsJENjsBMsuyJ223S9aVrNKEP5&download=1";
+    window.open("https://1drv.ms/b/s!AplsJENjsBMsuyIbNXSDf0yM1etL?e=6ycju3","_blank")
+    const fileURL = "https://onedrive.live.com/download?resid=2C13B06343246C99%217586&authkey=!ALABLA";
             
           //  console.log("hash")
              // Setting various property values
