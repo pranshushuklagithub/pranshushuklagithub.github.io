@@ -41,18 +41,18 @@ export default function Skills() {
             </Stack>
         </Box>
 
-        <Box display="flex" w="80%" flexWrap="wrap" m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%"n>
-            <Image className="skills-card-img" objectFit='cover' maxW={{ base: '100%', sm: '200px' }} src='./Images/backendcover.jpg'alt='backend' />
+        <Box  w="80%"  m="auto"   className="skills-card" alignItems="center" gap="3%" mt="2%" mb="2%"n>
+            
 
-            <Stack textAlign="left" >
+            <Stack textAlign="center">
                 
-                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" mb="15%">Back End </Text>
+                <Text  fontSize={["xl","2xl","3xl"]} color="teal" fontWeight="semibold" className="skills-card-name" >Back End </Text>
                 
 
-                <Flex gap="2%" >
-                    <Box as ="Button"  borderRadius="xl" bg='yellow' w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>NodeJS</Box>
-                    <Box as ="Button" color = "white" bg='red' borderRadius="xl" w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>Express</Box>
-                    <Box as ="Button" color = "white" bg='green' borderRadius="xl" w ={["30px","50px","70px"]} h={["20px","30px","35px"]} fontSize={["5px","7px","12px"]}>MongoDB</Box>
+                <Flex gap ="6%" w={["100%","60%","40%"]} h={["100px","150px","200px"]} m="auto">
+                    <Box textAlign="center" w={["100%","60%","40%"]} h={["100px","150px","200px"]}><Image src="./Images/node-js.png"></Image><Heading fontSize="xl">NodeJS</Heading></Box>
+                    <Box textAlign="center" w={["100%","60%","40%"]} h={["100px","150px","200px"]}><Image src="./Images/express.png"></Image><Heading fontSize="xl">Express</Heading></Box>
+                    <Box textAlign="center" w={["100%","60%","40%"]} h={["100px","150px","200px"]}><Image src="./Images/mongodb.png"></Image><Heading fontSize="xl">MongoDB</Heading></Box>
                 </Flex>
             </Stack>
         </Box>
