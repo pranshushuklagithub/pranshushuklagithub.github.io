@@ -5,7 +5,7 @@ export default function Home() {
     return <Box  id="home"  p="6%" w ="100%" h={["300px","500px","720px"]}>
         <Flex  p="5%" flexWrap="wrap" alignItems="center" mt="6%" m="auto">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
-            <Image className="home-img" src="./Images/pranshu.JPG" borderRadius="15%" w="100%"></Image>
+            <Image className="home-img" src="./Images/pranshu.jpg" borderRadius="15%" w="100%"></Image>
         </Box>
         <Box  textAlign="left">
         <Box  w="80%"  id="user-detail-intro" m="auto">
