@@ -11,23 +11,27 @@ import { Box } from '@chakra-ui/react';
 
 
 
+
 function App() {
   let [comp,setComp] = useState("home")
   let [theme,setTheme] = useState("light")
 
   return (
-    <Box scrollBehavior="smooth" width={{ base: "100%", md: "100%", lg: "100%" }} h={{ base: "100%", md: "100%", lg: "100%" }} className="App" bg={theme==="dark"?"InactiveBorder":"whitesmoke"} color={theme==="dark"?"telegram.100":false}>
+    <Box className="App"  bg={theme==="dark"?"InactiveBorder":"whitesmoke"} color={theme==="dark"?"telegram.100":false}>
       
          
          <Navbar comp={comp} setComp={setComp} />
          
-         <Box w="100%">
+         <Box w="100%" mt="2%">
          <Home/>
           <About/>
           <Skills/>
           <Projects/>
           <Contact/> 
           </Box>   
+
+
+          
      
     </Box>
 

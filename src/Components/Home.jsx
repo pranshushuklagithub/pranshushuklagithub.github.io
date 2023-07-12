@@ -2,16 +2,16 @@ import { Box, Heading, Text,Image, Flex } from "@chakra-ui/react";
 import { downloadResume } from "./Functions/function";
 
 export default function Home() {
-    return <Box  id="home"  p="6%" w ="100%" h={["300px","500px","720px"]}>
-        <Flex  p="5%" flexWrap="wrap" alignItems="center" mt="6%" m="auto">
+    return <Box  id="home"  p="6%" w ="100%" h={["300px","500px","720px"]} >
+        <Flex  p="5%" flexWrap="wrap" alignItems="center" mt="6%" m="auto" bg="green.200" borderRadius="2xl">
         <Box borderRadius="15%" w="15%" m="auto" p="1%" textAlign="left">
-            <Image className="home-img" src="./Images/pranshu.jpg" borderRadius="15%" w="100%"></Image>
+            <Image className="home-img" id="profile-img" src="./Images/pranshu.jpg" borderRadius="15%" w="100%"></Image>
         </Box>
         <Box  textAlign="left">
         <Box  w="80%"  id="user-detail-intro" m="auto">
         <Text fontSize={["xl","2xl","4xl"]} >Hi ! This is </Text>
         <Heading fontSize={["2xl","3xl","5xl"]} color="tomato" _hover={{color:"gray"}}>Pranshu Shukla</Heading>
-        <Text fontSize={["xl","2xl","4xl"]} fontWeight="semibold" id="user-detail-intro" >(I am a Full Stack Web Developer)</Text> 
+        <Text fontSize={["xl","2xl","4xl"]} fontWeight="semibold" id="user-detail-intro" >(Full Stack Web Developer)</Text> 
         </Box>
         <Box w="80%"  id="user-detail-intro" m="auto" overflow="hidden">
         <Text fontSize={["md","lg","xl"]} fontWeight="semibold" id="user-detail-intro" >Here you will find the best of my work that will help you to analyse my productivity as well as capability.

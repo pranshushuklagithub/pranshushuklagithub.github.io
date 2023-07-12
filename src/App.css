@@ -1,3 +1,6 @@
+
+
+
 .App {
   text-align: center;
 }
@@ -35,5 +38,144 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* @media only screen  and  (max-width:468px) {
+  *{
+    font-size: 5px;
+    width: 100%;
+  }
+  
+} */
+
+@media only screen and  (max-width:768px){
+    
+  *{
+    width: 100%;
+  }
+
+  #hamburger {
+    margin-left: 30%;
+  }
+  
+
+  #nav-menu{
+    width:100%;
+    justify-content: center;
+    margin-top: -2%;
+
+  }
+  #user-detail-name {
+    margin-right: -20%;
+  }
+  #all-nav-link {
+      display: none;
+  }
+
+  #all-nav-link > a {
+      height:10px;
+      align-self: center;
+      color: black;
+  }
+  #all-nav-link > a > button {
+      height: 0%;
+      color: black;
+  }
+  
+  #home {
+    width: 100%;
+  }
+  #home > div {
+    width: 80%;
+  }
+  
+  
+
+  #about {
+    width: 100%;
+    margin-top: 1%;
+    
+    justify-content: center;
+  }
+  #about-cover {
+    width: 60%;
+  }
+  #about_contact{
+    width: 30%;
+    margin-left: 30%;
+  }
+  #user-detail-intro{
+    text-align: left;
+  }
+  #about-content{
+    justify-content: center;
+    margin-top: 2%;
+  }
+ #skills {
+  padding: 0%;
+ }
+  #soft-skills{
+    width: 90%;
+    padding: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #react-cal > div > article {
+    width: 600px;
+    overflow: hidden;
+  }
+  
+
+  #frontend-skills {
+    width: 90%;
+    height: 200px;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  #backend-skills {
+    width: 80%;
+    height: 200px;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  #tools-card{
+    width: 80%;
+    height: 200px;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+
+  #hero-images {
+    width: 90%;
+    height: 120px;
+    font-size: 5px;
+  }
+
+  #contact-email {
+    width: 90%;
+  }
+  #contact-card {
+    width: 90%;
+  }
+  #project-detail-card {
+    width: 90%;
+  }
+  #project-buttons{
+    width: 30%;
+  }
+
+}
+@media only screen  and  (min-width:1200px){
+  #hamburger {
+      display: none;
+  }
+  
 }
 

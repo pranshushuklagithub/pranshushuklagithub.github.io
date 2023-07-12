@@ -51,14 +51,14 @@ export default function Projects(){
    
 
     return <Box id="projects" p="6%" w="100%">
-        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > My Projects</Heading>
-        <SimpleGrid  w="100%" textAlign="left" p="4%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card" >
+        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%"> Projects</Heading>
+        <SimpleGrid w="100%" textAlign="left" p="4%" gap ="1%" gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} m="auto" className="project-card" >
         
         {
             projects.map((e)=>{
                 return (
 
-        <Box w="90%"  boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card" bg="white" alignItems="center" borderRadius="2%" p="3%" m="auto">
+        <Box w="90%"  boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" className="project-card"  alignItems="center" borderRadius="2%" p="3%" m="auto" id="project-detail-card">
                 <Box p="2%" >
                     <Image src={e.image} alt={e.name} borderRadius='lg' className="project-title"/>
                     <Stack mt='3' spacing='1'>
@@ -69,7 +69,7 @@ export default function Projects(){
                 </Box>
             
             <Box p="2%">
-                <ButtonGroup spacing='3'>
+                <ButtonGroup spacing='3' id="project-buttons">
                 <Link href={e.github} isExternal><Box  as ="Button"  bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]}  _hover={{bg:"green.300",color:"black"}}  color="white" mr="1%" className="project-github-link" borderRadius="lg">Github </Box></Link>
                 <Link href={e.live} isExternal ><Box as ="Button" bg='teal' w ={["40px","60px","80px"]} h={["20px","30px","40px"]} fontSize={["7px","10px","17px"]} className="project-deployed-link"  color="white" _hover={{bg:"green.300",color:"black"}} borderRadius="lg">Live</Box></Link>
                 </ButtonGroup>
