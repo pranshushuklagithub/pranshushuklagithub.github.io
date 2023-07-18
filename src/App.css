@@ -40,13 +40,102 @@
   }
 }
 
-/* @media only screen  and  (max-width:468px) {
+@media only screen  and  (max-width:480px) {
   *{
-    font-size: 5px;
+    font-size: 12px;
+  }
+  #nav-menu {
     width: 100%;
   }
+  #nav-menu :first-child {
+    height: 20px;
+    margin-top: 2%;
+  }
+
   
-} */
+  #ln {
+    margin-top: 2%;
+  }
+  #hamburger {
+    margin-top: 1%;
+  }
+  #home {
+    width: 100%;
+    padding: 14%;
+  }
+
+  #about {
+    width: 100%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about-cover {
+    width: 60%;
+  }
+
+
+  #frontend-skills {
+    width: 90%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  #backend-skills {
+    width: 90%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  #tools-card{
+    width: 90%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+
+  #hero-images {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  #hero-images > div {
+    height: 70px;
+    width: 100px;
+  }
+
+  #project-detail-card {
+      width: 100%;
+      height: 420px;
+  }
+  .project-title {
+    height: 10px;
+  }
+  .project-description {
+    height: 30px;
+  }
+  .project-tech-stack {
+    height: 30px;
+  }
+  #proj-card{
+    height: 100%;
+    margin-bottom: 10%;
+  }
+
+  #proj-cover {
+    height: 200px;
+  }
+
+  #button-box {
+    height: 40px;
+    margin-top: -50%;
+  }
+
+  
+}
 
 @media only screen and  (max-width:768px){
     
@@ -171,6 +260,7 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     width: 100%;
+    
   }
   #project-detail-card {
     width: 90%;

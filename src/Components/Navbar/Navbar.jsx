@@ -17,7 +17,7 @@ export default function Navbar({comp,setComp}){
     // console.log(comp)
 
 
-    return <Box id="nav-menu" mt="-2%" bg="MenuText" p="1%" className="navbar" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" w="100%" h="70px" position="fixed">
+    return <Box id="nav-menu" mt="-2%" bg="MenuText" p="1%" className="navbar" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" w="100%" h="70px"  position="fixed">
         <Flex w="100%" justify="space-evenly" >
         <a id="user-heading-box" href = "#home" onClick={()=>{
             setComp("home")
