@@ -55,38 +55,36 @@
   }
 
   #hamburger {
-    margin-left: 30%;
+    margin-left: 60%;
   }
-  
+  #user-heading-box {
+    width: 100%;
+    margin-left: 2%;
+  }
 
   #nav-menu{
     width:100%;
     justify-content: center;
-    margin-top: -2%;
+    height: 70px;
+    position: fixed;
 
   }
   #user-detail-name {
-    margin-right: -20%;
+    width: 100%;
   }
   #all-nav-link {
       display: none;
   }
 
-  #all-nav-link > a {
-      height:10px;
-      align-self: center;
-      color: black;
-  }
-  #all-nav-link > a > button {
-      height: 0%;
-      color: black;
-  }
   
   #home {
     width: 100%;
   }
   #home > div {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding: 3%;
   }
   
   
@@ -94,8 +92,8 @@
   #about {
     width: 100%;
     margin-top: 1%;
-    
     justify-content: center;
+    align-items: center;
   }
   #about-cover {
     width: 60%;
@@ -135,16 +133,16 @@
     margin-top: 2%;
   }
   #backend-skills {
-    width: 80%;
-    height: 200px;
+    width: 90%;
+    height: 270px;
     padding: 2%;
     margin: auto;
     margin-top: 2%;
   }
 
   #tools-card{
-    width: 80%;
-    height: 200px;
+    width: 90%;
+    height: 270px;
     padding: 2%;
     margin: auto;
     margin-top: 2%;
@@ -157,12 +155,22 @@
     height: 120px;
     font-size: 5px;
   }
-
-  #contact-email {
-    width: 90%;
+  #contact{
+    width: 100%;
+    margin-top: 4%;
   }
   #contact-card {
-    width: 90%;
+    width: 100%;
+  }
+  #contact-email {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #proj-card {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
   }
   #project-detail-card {
     width: 90%;
@@ -171,11 +179,5 @@
     width: 30%;
   }
 
-}
-@media only screen  and  (min-width:1200px){
-  #hamburger {
-      display: none;
-  }
-  
 }
 

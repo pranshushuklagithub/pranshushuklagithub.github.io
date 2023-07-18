@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar"
 
 export default function Skills() {
     return <Box id="skills" p="6%"  w="100%" m="auto"  >
-        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]} mb="2%" > Skills</Heading>
+        <Heading  fontSize={["xl","2xl","3xl"]} mb="2%" > Skills</Heading>
         
 
         <Box mt="2%" m="auto" >

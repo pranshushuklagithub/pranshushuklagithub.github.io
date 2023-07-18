@@ -8,7 +8,7 @@ export default function About() {
 
     return <Box p="6%" textAlign="center" id="about" className="about section" w="100%" >
         <Heading  fontSize={["xl","2xl","3xl"]} mb="2%"> About me</Heading>
-        <Flex w="100%" m="auto" mb="2%" id="about" className="about section"  alignItems="center" justify="space-between" gap ="2%" flexWrap={["wrap","wrap","nowrap"]} p="2%" bg="teal.300" borderRadius="2xl">
+        <Flex w="100%" m="auto" mb="2%"  className="about section"  alignItems="center" justify="space-between" gap ="2%" flexWrap={["wrap","wrap","nowrap"]} p="2%" bg="teal.300" borderRadius="2xl">
         <Box w="40%" m="auto" id="about-cover">
             <Image src="./Images/aboutcover.png"  w="100%" borderRadius="2xl" m="auto"></Image>
         </Box>

@@ -1,14 +1,13 @@
 
 import {Box, Button, Flex, Heading, Text,useDisclosure, Drawer,
     DrawerBody,
-    DrawerHeader,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
     } from "@chakra-ui/react"
 import { downloadResume } from "../Functions/function";
 import {HamburgerIcon} from "@chakra-ui/icons"
-// import DrawerModel from "./Drawer";
+
 
 
 
@@ -19,11 +18,11 @@ export default function Navbar({comp,setComp}){
 
 
     return <Box id="nav-menu" mt="-2%" bg="MenuText" p="1%" className="navbar" boxShadow="rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" w="100%" h="70px" position="fixed">
-        <Flex w="100%" justify="space-evenly" flexWrap={["wrap"]}>
-        <a href = "#home" onClick={()=>{
+        <Flex w="100%" justify="space-evenly" >
+        <a id="user-heading-box" href = "#home" onClick={()=>{
             setComp("home")
         }}>
-            <Box  w="40%"><Heading><Flex gap="3%" ><Text color="tomato" id="user-detail-name">Pranshu</Text> <Text color="telegram.200">Shukla</Text></Flex></Heading></Box></a>
+            <Box  id="user-detail-name" w="40%"><Heading><Flex gap="3%" ><Text color="tomato" id="fn" >Pranshu</Text> <Text color="telegram.200" id="ln">Shukla</Text></Flex></Heading></Box></a>
             
         <Flex justify="space-evenly" gap="1%"  w="60%" alignItems="center"  id="all-nav-link">
         <a href="#home"><Button  className="nav-link home" w ={["30px","50px","70px"]} h={["15px","25px","35px"]} bg={comp==="home"?"black":"tomato"} color="white" _hover={{bg:"green.300",color:"black"}} alignItems="center" onClick={()=>{
@@ -40,9 +39,9 @@ export default function Navbar({comp,setComp}){
         <a href="#resume" id="resume-link-1"><Button className="nav-link resume" w ={["30px","50px","70px"]} h={["15px","25px","35px"]} bg="blue.400" color="white" _hover={{bg:"green.300",color:"black"}} fontSize={["5px","8px","15px"]}  id="resume-button-1" onClick={()=>{downloadResume()}}>Resume</Button></a>
         
         </Flex>
-        <Box color="white" mr="-55%" mt="-4%" id="hamburger" fontSize="2xl" onClick={onOpen}><HamburgerIcon/></Box>
+        <Box color="white"  id="hamburger" fontSize="2xl" onClick={onOpen}><HamburgerIcon/></Box>
 
-        <Box>
+        <Box >
         <Drawer  onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>

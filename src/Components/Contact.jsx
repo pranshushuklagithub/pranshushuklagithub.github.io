@@ -4,7 +4,7 @@ import {EmailIcon,PhoneIcon} from "@chakra-ui/icons"
 
 export default function Contact() {
     return <Box id="contact"  p="6%" w="100%">
-        <Heading id="user-detail-name" fontSize={["xl","2xl","3xl"]}> Contacts</Heading>
+        <Heading  fontSize={["xl","2xl","3xl"]}> Contacts</Heading>
         
     <Flex bg="GrayText" borderRadius="2xl" flexWrap="wrap" w="100%" m="auto" justify="space-between" mt="8%" id="contact-card">
             <Box w="50%" alignItems="center">
