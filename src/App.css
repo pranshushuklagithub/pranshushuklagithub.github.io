@@ -48,16 +48,23 @@
     width: 100%;
   }
   #nav-menu :first-child {
-    height: 20px;
+    height: 40px;
     margin-top: 2%;
+    align-items: center;
   }
 
   
+  #fn {
+    font-size: 20px;
+  }
   #ln {
-    margin-top: 2%;
+    font-size: 20px;
+    margin-top: -8%;
   }
   #hamburger {
     margin-top: 1%;
+    height: 40px;
+    align-items: center;
   }
   #home {
     width: 100%;
