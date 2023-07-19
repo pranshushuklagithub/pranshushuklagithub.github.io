@@ -11,7 +11,7 @@ export default function Projects(){
             image:"./Images/razer.png",
             description:"An e-commerce website(USA based), where people can explore and buy electronic products.",
             github:"https://github.com/hasbealam/razer.com-clone.git",
-            live:"razer-clone-blush.vercel.app/",
+            live:"https://cloningrazer.vercel.app/",
             techStack : "ReactJS | ChakraUI | REDUX | JAVASCRIPT | CSS"
         },
         {
@@ -19,7 +19,7 @@ export default function Projects(){
             image:"./Images/tata1mg.png",
             description:"Tata's leading ecommerce website, where people can explore and buy pharma products.",
             github:"https://github.com/pranshushuklagithub/tata1mg-clone.git",
-            live:"https://cloningrazer.vercel.app/",
+            live:"https://tata1mg-clone-project.netlify.app/",
             techStack : "HTML | CSS | JAVASCRIPT "
         },
         {
