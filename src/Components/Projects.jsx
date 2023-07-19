@@ -19,7 +19,7 @@ export default function Projects(){
             image:"./Images/tata1mg.png",
             description:"Tata's leading ecommerce website, where people can explore and buy pharma products.",
             github:"https://github.com/pranshushuklagithub/tata1mg-clone.git",
-            live:"https://648b7445ccba720a9e352702--deft-pika-7adc6a.netlify.app/",
+            live:"https://cloningrazer.vercel.app/",
             techStack : "HTML | CSS | JAVASCRIPT "
         },
         {
@@ -41,7 +41,7 @@ export default function Projects(){
         {
             name:"Portfolio Website",
             image:"./Images/portfoliocover.png",
-            description:"Leading Ecommerce which offers various travel and tours services.",
+            description:"This my portfolio website",
             github:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
             live:"https://pranshushuklagithub.github.io",
             techStack : "ReactJS | ChakraUI | JAVASCRIPT | CSS "
