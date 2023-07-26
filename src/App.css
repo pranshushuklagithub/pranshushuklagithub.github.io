@@ -46,9 +46,14 @@
   }
   #nav-menu {
     width: 100%;
+    height: 50px;
+    position: fixed;
   }
+  #all-nav-link {
+    display: none;
+}
   #nav-menu :first-child {
-    height: 40px;
+    height: 30px;
     margin-top: 2%;
     align-items: center;
   }
@@ -56,17 +61,21 @@
   
   #fn {
     font-size: 20px;
-    margin-left: 35%;
+    margin-left: -10%;
+    margin-bottom: 20%;
   }
   #ln {
     font-size: 20px;
-    margin-top: -8%;
+    margin-bottom: 25%;
   }
   #hamburger {
     margin-top: 1%;
     height: 40px;
     align-items: center;
-    margin-right: 25%;
+    margin-left: 45%;
+  }
+  #hamburger :first-child {
+    font-size: 25px;
   }
   #home {
     width: 100%;
@@ -84,22 +93,26 @@
     width: 60%;
   }
 
-
+  #soft-skills{
+    width: 100%;
+  }
   #frontend-skills {
-    width: 90%;
-    padding: 2%;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
     margin: auto;
     margin-top: 2%;
   }
   #backend-skills {
-    width: 90%;
+    width: 100%;
     padding: 2%;
     margin: auto;
     margin-top: 2%;
+    justify-content: space-evenly;
   }
 
   #tools-card{
-    width: 90%;
+    width: 100%;
     padding: 2%;
     margin: auto;
     margin-top: 2%;
@@ -108,17 +121,20 @@
   
 
   #hero-images {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 40%;
+    padding-right: 40%;
   }
   #hero-images > div {
-    height: 70px;
+    height: 80px;
     width: 100px;
+  }
+  #react-cal {
+    width: 100%;
   }
 
   #project-detail-card {
       width: 100%;
-      height: 420px;
+      height: 450px;
   }
   .project-title {
     height: 10px;
@@ -140,13 +156,18 @@
 
   #button-box {
     height: 40px;
-    margin-top: -50%;
+    margin-top: -40%;
+  }
+
+  #contact-card {
+    width: 100%;
+    overflow: hidden;
   }
 
   
 }
 
-@media only screen and  (max-width:768px){
+@media (min-width:481px) and  (max-width:768px){
     
   *{
     width: 100%;
@@ -154,6 +175,9 @@
 
   #hamburger {
     margin-left: 60%;
+  }
+  #hamburger :first-child {
+    font-size: 30px;
   }
   #user-heading-box {
     width: 100%;
@@ -163,7 +187,7 @@
   #nav-menu{
     width:100%;
     justify-content: center;
-    height: 70px;
+    height: 80px;
     position: fixed;
 
   }
@@ -280,7 +304,7 @@
 
 }
 
-@media only screen  and  (min-width:1300px) {
+@media only screen  and  (min-width:769px) {
   #hamburger {
     display: none;
   }
