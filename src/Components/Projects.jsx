@@ -7,12 +7,12 @@ export default function Projects(){
 
     const projects = [
         {
-            name:"Razer.com-Clone",
-            image:"./Images/razer.png",
-            description:"An e-commerce website(USA based), where people can explore and buy electronic products.",
-            github:"https://github.com/hasbealam/razer.com-clone.git",
-            live:"https://cloningrazer.vercel.app/",
-            techStack : "ReactJS | ChakraUI | REDUX | JAVASCRIPT | CSS"
+            name:"OLX Lite",
+            image:"./Images/olxlite.png",
+            description:"An e-commerce website, where people can explore,sell and buy any product locally.",
+            github:"https://github.com/pranshushuklagithub/Fullstack_web_application",
+            live:"https://olxlitefs.vercel.app/",
+            techStack : "ReactJS | ChakraUI | REDUX | JAVASCRIPT | Node JS | Express JS | MongoDB | JSON"
         },
         {
             name:"Tata1MG.com-Clone",
