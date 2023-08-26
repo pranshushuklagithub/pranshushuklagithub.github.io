@@ -20,7 +20,7 @@ export default function Projects(){
             description:"Tata's leading ecommerce website, where people can explore and buy pharma products.",
             github:"https://github.com/pranshushuklagithub/tata1mg-clone.git",
             live:"https://tata1mg-clone-project.netlify.app/",
-            techStack : "HTML | CSS | JAVASCRIPT "
+            techStack : "HTML | CSS | JAVASCRIPT | JSON Server "
         },
         {
             name:"Bewakoof.com-Clone",
@@ -44,7 +44,7 @@ export default function Projects(){
             description:"This my portfolio website",
             github:"https://github.com/pranshushuklagithub/pranshushuklagithub.github.io.git",
             live:"https://pranshushuklagithub.github.io",
-            techStack : "ReactJS | ChakraUI | JAVASCRIPT | CSS "
+            techStack : "ReactJS | ChakraUI | JAVASCRIPT | CSS | REDUX"
         }
         
     ]
